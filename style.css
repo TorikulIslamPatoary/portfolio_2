@@ -145,4 +145,41 @@ h1 span {
   margin: 8px;
   color: #00ffd5;
 }
+/* ===== Navbar Mobile ===== */
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #0d0f0f;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    display: none;
+  }
+
+  nav a {
+    padding: 15px 0;
+    border-top: 1px solid #222;
+    margin: 0;
+  }
+
+  nav.show {
+    display: flex;
+  }
+}
+
 
